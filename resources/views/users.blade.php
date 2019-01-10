@@ -54,7 +54,7 @@
         <div class='addUser'>
             <a href="{{route('addForm')}}">Добавить сотрудника</a></li>                   
         </div>
-            
+    {{ $all->links() }}
     </body>
 </html>
 
