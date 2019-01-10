@@ -9,7 +9,7 @@
             table, td, th {
                 border: 1px solid;
             }
-            .add_user{
+            .addUser{
                 margin: 10px;
                 width: 150px;
                 height: 25px;
@@ -44,14 +44,15 @@
                     <td>{{$user->id}}</td>
                     <td>{{$user->name}}</td> 
                     <td>{{$user->surname}}</td>
+                    <td>{{$user->age}}</td>
                     <td><a href="{{route('updateForm', $user->id)}}">Обновить</a></td>
                     <td><a href="{{route('deleteUser', $user->id)}}">Удалить</a></td> 
                 </tr>
                 @endforeach
             </table>
         </div>
-        <div class='add_user'>
-            <a href="{{route('addForm')}}">Добавить новость</a></li>                   
+        <div class='addUser'>
+            <a href="{{route('addForm')}}">Добавить сотрудника</a></li>                   
         </div>
             
     </body>
